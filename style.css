@@ -10,6 +10,14 @@ a:visited {
     color: inherit;
 }
 
+.text_red {
+    color: #aa0000;
+}
+
+.text_green {
+    color: #78a962;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -29,6 +37,7 @@ header .container {
 
 .menu {
     display: flex;
+    position: relative;
 }
 
 .menu > li {
@@ -36,7 +45,6 @@ header .container {
     padding: 20px 0;
     border-bottom: 4px solid transparent;
     font-weight: 600;
-    position: relative;
 }
 
 .menu > li:hover {
@@ -57,12 +65,17 @@ header .container {
 .submenu {
     display: none;
     position: absolute;
-    top: calc(100% + 5px); /* 100% da altura do li + 4px de margem */
+    top: 100%;
     left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.submenu > li {
+    border: 1px solid #a2a6b0;
 }
 
 .menu li:hover .submenu {
-    display: block;
+    display: flex;
 }
 
 .product_card {
@@ -79,7 +92,6 @@ header .container {
 
 .stock_info {
     font-size: 0.625em;
-    color: #78a962;
     padding: 7px 0;
 }
 
@@ -125,4 +137,99 @@ header .container {
 
 .price strong {
     font-size: 1.125em;
+}
+
+/* Actions style */
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.last {
+    margin-left: auto;
+}
+
+.search_button {
+    margin-right: 25px;
+}
+
+/* Cart Style */
+
+.cart_icon {
+    margin-right: 25px;
+    width: 36px;
+    position: relative;
+}
+
+.cart_icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.cart_icon div {
+    width: 16px;
+    height: 16px;
+    font-weight: bold;
+    font-size: 0.625em;
+    background-color: #0156ff;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* User account atyle */
+
+.account {
+    position: relative;
+}
+
+.account img {
+    border-radius: 50%;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+}
+
+.account_dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* posição da caixa */
+    right: 0;
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.account_dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.account_dropdown li {
+    padding: 8px 0;
+}
+
+.account_dropdown::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* seta para cima */
+    right: 20px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.account:hover .account_dropdown {
+    display: block;
 }
