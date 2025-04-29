@@ -195,7 +195,7 @@ header .container {
     display: inline-block;
 }
 
-.account_dropdown {
+.dropdown {
     display: none;
     position: absolute;
     top: 100%; /* posição da caixa */
@@ -209,17 +209,17 @@ header .container {
     white-space: nowrap;
 }
 
-.account_dropdown ul {
+.dropdown ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.account_dropdown li {
+.dropdown li {
     padding: 8px 0;
 }
 
-.account_dropdown::after {
+.dropdown::after {
     content: "";
     position: absolute;
     bottom: 100%; /* seta para cima */
@@ -230,6 +230,6 @@ header .container {
     border-color: transparent transparent white transparent;
 }
 
-.account:hover .account_dropdown {
+.account:hover .dropdown {
     display: block;
 }
