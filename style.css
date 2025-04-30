@@ -158,13 +158,19 @@ header .container {
 
 .cart_icon {
     margin-right: 25px;
-    width: 36px;
     position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* cor de fundo do container */
 }
 
 .cart_icon img {
-    width: 25px;
-    height: 25px;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 .cart_icon div {
@@ -181,7 +187,7 @@ header .container {
     border-radius: 50%;
 }
 
-/* User account atyle */
+/* User account style */
 
 .account {
     position: relative;
@@ -196,7 +202,7 @@ header .container {
 }
 
 .dropdown {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%; /* posição da caixa */
     right: 0;
@@ -215,7 +221,7 @@ header .container {
     padding: 0;
 }
 
-.dropdown li {
+.dropdown > li {
     padding: 8px 0;
 }
 
@@ -233,3 +239,44 @@ header .container {
 .account:hover .dropdown {
     display: block;
 }
+
+/* End */
+
+/* Cart Style */
+
+.cart {
+    position: relative;
+}
+
+.cart .dropdown {
+    width: 310px;
+
+    z-index: 10;
+}
+
+.cart .dropdown ul {
+    display: flex;
+    align-items: center;
+}
+
+.cart .dropdown::after {
+    right: 42px;
+}
+
+.cart .cart_product_desc {
+    width: 153px;
+    height: 62px;
+}
+
+.cart_qnt {
+    display: flex;
+    align-items: baseline;
+    width: 18px;
+    height: 25px;
+}
+
+.cart_qnt p:nth-child(1) {
+    font-size: 1.29em;
+}
+
+/* End */
