@@ -217,36 +217,6 @@ header .container {
 
 /* Cart Style */
 
-.cart_icon {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff; /* cor de fundo do container */
-}
-
-.cart_icon img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-
-.cart_icon div {
-    width: 16px;
-    height: 16px;
-    font-weight: bold;
-    font-size: 0.625em;
-    background-color: #0156ff;
-    position: absolute;
-    top: -20%;
-    right: 0;
-    color: #ffffff;
-    text-align: center;
-    border-radius: 50%;
-}
-
 #minicart {
     position: relative;
     margin-right: 25px;
@@ -268,7 +238,37 @@ header .container {
     display: block;
 }
 
-.cart_product_desc {
+.minicart_icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* cor de fundo do container */
+}
+
+.minicart_icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.minicart_icon div {
+    width: 16px;
+    height: 16px;
+    font-weight: bold;
+    font-size: 0.625em;
+    background-color: #0156ff;
+    position: absolute;
+    top: -20%;
+    right: 0;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.minicart_product_desc {
     width: 153px;
     height: auto; /* Permite que o conteúdo se ajuste mais facilmente */
     max-height: 62px; /* Mantém a altura máxima */
@@ -279,18 +279,18 @@ header .container {
     text-overflow: ellipsis;
 }
 
-.cart_qnt {
+.minicart_qnt {
     display: flex;
     align-items: baseline;
     width: 18px;
     height: 25px;
 }
 
-.cart_qnt p:nth-child(1) {
+.minicart_qnt p:nth-child(1) {
     font-size: 1.29em;
 }
 
-.cart_item {
+.minicart_item {
     display: flex;
     width: 286px;
 }
