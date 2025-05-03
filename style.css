@@ -139,6 +139,8 @@ header .container {
     font-size: 1.125em;
 }
 
+/*End*/
+
 /* Actions style */
 
 .actions {
@@ -154,10 +156,68 @@ header .container {
     margin-right: 25px;
 }
 
+/*End*/
+
+/* User account style */
+
+#account {
+    position: relative;
+    width: 36px;
+    height: 36px;
+}
+
+#account img {
+    border-radius: 50%;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 125%; /* posição da caixa */
+    right: 0;
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown > li {
+    padding: 8px 0;
+}
+
+.dropdown::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; /* seta para cima */
+    right: 12px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+#account:hover .dropdown {
+    display: block;
+}
+
+/* End */
+
 /* Cart Style */
 
 .cart_icon {
-    margin-right: 25px;
     position: relative;
     width: 40px;
     height: 40px;
@@ -187,80 +247,25 @@ header .container {
     border-radius: 50%;
 }
 
-/* User account style */
-
-.account {
+#minicart {
     position: relative;
+    margin-right: 25px;
+    width: 36px;
+    height: 36px;
 }
 
-.account img {
-    border-radius: 50%;
-}
-
-.dropdown-wrapper {
-    display: inline-block;
-}
-
-.dropdown {
-    display: block;
-    position: absolute;
-    top: 100%; /* posição da caixa */
-    right: 0;
-    background: white;
-    color: black;
-    padding: 8px 12px;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    font-size: 14px;
-    white-space: nowrap;
-}
-
-.dropdown ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown > li {
-    padding: 8px 0;
-}
-
-.dropdown::after {
-    content: "";
-    position: absolute;
-    bottom: 100%; /* seta para cima */
-    right: 20px;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent white transparent;
-}
-
-.account:hover .dropdown {
-    display: block;
-}
-
-/* End */
-
-/* Cart Style */
-
-.cart {
-    position: relative;
-}
-
-.cart .dropdown {
+#minicart .dropdown {
     width: 310px;
-
     z-index: 10;
 }
 
-.cart .dropdown ul {
+#minicart .dropdown ul {
     display: flex;
     align-items: center;
 }
 
-.cart .dropdown::after {
-    right: 42px;
+#minicart:hover .dropdown {
+    display: block;
 }
 
 .cart_product_desc {
