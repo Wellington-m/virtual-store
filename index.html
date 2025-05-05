@@ -338,8 +338,10 @@
                         </div>
 
                         <div class="dropdown">
-                            <h3>Meu carrinho</h3>
-                            <p>2 items no carrinho</p>
+                            <h3 id="minicart_title">Meu carrinho</h3>
+                            <p id="minicart_products_total">
+                                2 items no carrinho
+                            </p>
                             <ul>
                                 <li class="minicart_item">
                                     <div class="minicart_qnt">
@@ -357,11 +359,57 @@
                                         carrinho
                                     </p>
                                     <div class="minicart_buttons">
-                                        <button type="button">Excluir</button>
-                                        <button type="button">Editar</button>
+                                        <button type="button">
+                                            <img
+                                                src="images/Delete.svg"
+                                                alt="Circulo com a letra X no centro"
+                                            />
+                                        </button>
+                                        <button type="button">
+                                            <img
+                                                src="images/Update.svg"
+                                                alt="Circulo com um lápis no centro"
+                                            />
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="minicart_item">
+                                    <div class="minicart_qnt">
+                                        <p>1</p>
+                                        <p>X</p>
+                                    </div>
+                                    <div class="minicart_product_img">
+                                        <img
+                                            src="https://placehold.co/65x65"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <p class="minicart_product_desc">
+                                        Teste da descrição do produto no mini
+                                        carrinho
+                                    </p>
+                                    <div class="minicart_buttons">
+                                        <button type="button">
+                                            <img
+                                                src="images/Delete.svg"
+                                                alt="Circulo com a letra X no centro"
+                                            />
+                                        </button>
+                                        <button type="button">
+                                            <img
+                                                src="images/Update.svg"
+                                                alt="Circulo com um lápis no centro"
+                                            />
+                                        </button>
                                     </div>
                                 </li>
                             </ul>
+                            <div id="minicart_subtotal">
+                                <p>Subtotal: <strong>R$ 1.900,00</strong></p>
+                            </div>
+                            <button id="go_cart_button" type="button">
+                                Ir para o carrinho
+                            </button>
                         </div>
                     </div>
                     <div id="account">
