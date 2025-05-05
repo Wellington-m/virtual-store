@@ -154,6 +154,7 @@ header .container {
 
 .search_button {
     margin-right: 25px;
+    cursor: pointer;
 }
 
 /*End*/
@@ -168,6 +169,7 @@ header .container {
 
 #account img {
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .dropdown-wrapper {
@@ -211,6 +213,13 @@ header .container {
 
 #account:hover .dropdown {
     display: block;
+}
+
+#account_options li {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 16px 0px;
+    cursor: pointer;
 }
 
 /* End */
