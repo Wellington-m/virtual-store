@@ -387,7 +387,7 @@ header .container nav {
 
 /* End */
 
-/* Campo de pesquisa */
+/* Search field */
 
 #srch_field {
     display: none;
@@ -395,6 +395,7 @@ header .container nav {
     right: 0;
     top: 20%;
     width: 100%;
+    height: 80%;
     background-color: #ffffff;
 }
 
