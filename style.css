@@ -416,14 +416,11 @@ header .container nav {
 /* About store style */
 
 #about {
+    display: flex;
     margin-top: 30px;
 }
 
-#about .container {
-    display: flex;
-}
-
-#about .container img {
+#about img {
     margin-right: 30px;
 }
 
