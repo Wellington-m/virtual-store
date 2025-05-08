@@ -122,6 +122,7 @@ header .container nav {
     font-weight: normal;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Número de linhas antes de cortar */
+    line-clamp: 3; /* Necessário acrescentar regra de stylo padrão para não dar WARNING no -webkit-line-clamp */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -295,6 +296,7 @@ header .container nav {
     max-height: 62px; /* Mantém a altura máxima */
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
