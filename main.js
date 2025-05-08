@@ -13,6 +13,6 @@ $(() => {
             });
         }
 
-        $("#srch_field").slideToggle();
+        $("#srch_field").toggle("slide");
     });
 });

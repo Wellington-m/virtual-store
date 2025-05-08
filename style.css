@@ -410,3 +410,23 @@ header .container nav {
 }
 
 /* End */
+
+/* About store style */
+
+#about {
+    margin-top: 30px;
+}
+
+#about .container {
+    display: flex;
+}
+
+#about .container img {
+    margin-right: 30px;
+}
+
+#about .store_description p {
+    font-size: 1em;
+}
+
+/* End */
