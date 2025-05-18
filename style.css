@@ -279,10 +279,9 @@ header .container nav {
     background-color: #ffffff; /* cor de fundo do container */
 }
 
-.minicart_icon img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+.minicart_svg {
+    width: 100%;
+    height: 60%;
 }
 
 .minicart_icon div {
@@ -579,6 +578,8 @@ footer .container {
 }
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* Header */
+
     .container {
         max-width: 641px;
     }
@@ -595,7 +596,7 @@ footer .container {
     header .container {
         height: 75px;
         display: grid;
-        grid-template-columns: 20px 500px 101px;
+        grid-template-columns: 24px 496px 101px;
         gap: 10px;
     }
 
@@ -606,12 +607,13 @@ footer .container {
     #hamburger {
         color: #ffffff;
         display: block;
+        cursor: pointer;
     }
 
     .menu {
         position: absolute;
         display: none;
-        top: 20%;
+        top: 25%;
         background-color: rgb(255, 255, 255);
         z-index: 10;
     }
@@ -621,7 +623,32 @@ footer .container {
         background-color: transparent;
     }
 
+    #srch_field form {
+        margin-top: 4px;
+    }
+
     #search_button {
         display: none;
     }
+
+    .minicart_icon {
+        background-color: transparent;
+    }
+
+    .minicart_svg {
+        bottom: 0;
+        position: absolute;
+    }
+
+    .minicart_svg path {
+        fill: #ffffff;
+    }
+
+    .minicart_icon div {
+        background-color: #ffffff;
+        color: #0156ff;
+        top: -3%;
+    }
+
+    /* End */
 }
