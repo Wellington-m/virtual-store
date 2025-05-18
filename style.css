@@ -1,3 +1,13 @@
+/* font-weight
+Thin 100
+ExtraLight 200
+Light 300
+Regular 400
+Medium 500
+SemiBold 600
+Bold 700
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -122,7 +132,6 @@ header .container nav {
     font-weight: normal;
     display: -webkit-box;
     -webkit-line-clamp: 3; /* Número de linhas antes de cortar */
-    line-clamp: 3; /* Necessário acrescentar regra de stylo padrão para não dar WARNING no -webkit-line-clamp */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -433,7 +442,7 @@ header .container nav {
 /* New products seccion */
 
 #new_products {
-    margin-top: 40px;
+    margin: 40px 0 40px 0;
 }
 
 .new_products_list {
@@ -444,6 +453,24 @@ header .container nav {
     padding: 0;
     margin: 0;
     margin-top: 10px;
+}
+
+#new_products .product_card {
+    height: 396px;
+}
+
+#new_products .product_card button {
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #0156ff;
+    color: #ffffff;
+    font-size: 0.88em;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 /* End */
