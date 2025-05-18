@@ -422,7 +422,7 @@ header .container nav {
 
 /* End */
 
-/* About store style */
+/* About store */
 
 #about {
     display: flex;
@@ -431,6 +431,10 @@ header .container nav {
 
 #about img {
     margin-right: 30px;
+}
+
+#about .store_description h2 {
+    margin-bottom: 20px;
 }
 
 #about .store_description p {
