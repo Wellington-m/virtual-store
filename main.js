@@ -15,4 +15,10 @@ $(() => {
 
         $("#srch_field").toggle("slide");
     });
+
+    $("#hamburger").on("click", () => {
+        console.log("Clicou");
+
+        $("header .menu").slideToggle();
+    });
 });
