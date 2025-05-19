@@ -761,7 +761,20 @@
         <main>
             <div class="container">
                 <section id="about">
-                    <img src="https://placehold.co/300x300" alt="" />
+                    <picture>
+                        <source
+                            media="(max-width: 640px)"
+                            srcset="https://placehold.co/200x200"
+                        />
+                        <source
+                            media="(max-width: 1023px)"
+                            srcset="https://placehold.co/400x400"
+                        />
+                        <img
+                            src="https://placehold.co/300x300"
+                            alt="imagem da loja"
+                        />
+                    </picture>
                     <div class="store_description">
                         <h2>Sobre a Loja</h2>
                         <p>
