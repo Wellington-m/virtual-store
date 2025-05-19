@@ -669,4 +669,14 @@ footer .container {
     }
 
     /* End */
+
+    /* New products */
+
+    .new_products_list {
+        grid-template-columns: repeat(2, 1fr);
+        width: fit-content;
+        margin: 20px auto 0 auto;
+    }
+
+    /* End */
 }
