@@ -679,4 +679,27 @@ footer .container {
     }
 
     /* End */
+
+    /* footer */
+    #newsletter h3 {
+        font-size: 1.1em;
+    }
+
+    #newsletter p {
+        font-size: 0.83em;
+    }
+
+    #newsletter form input {
+        width: 186px;
+    }
+
+    .payments-cards img {
+        width: 34px;
+    }
+
+    #footer-bottom p {
+        font-size: 0.8em;
+    }
+
+    /* End */
 }
