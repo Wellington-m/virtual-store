@@ -652,4 +652,21 @@ footer .container {
     }
 
     /* End */
+
+    /* About store */
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about picture {
+        margin-bottom: 30px;
+    }
+
+    #about img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* End */
 }
