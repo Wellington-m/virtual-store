@@ -16,9 +16,25 @@ $(() => {
         $("#srch_field").toggle("slide");
     });
 
-    $("#hamburger").on("click", () => {
-        console.log("Clicou");
+    if (
+        window.matchMedia("(min-width: 641px)" && "(max-width: 1023px)").matches
+    ) {
+        $("#hamburger").on("click", function (e) {
+            e.stopPropagation(); // impede o clique de propagar para o document
+            $(this).text($("header .menu").is(":visible") ? "menu" : "close");
 
-        $("header .menu").slideToggle();
-    });
+            $("header .menu").slideToggle();
+        });
+
+        $(document).on("click", () => {
+            if ($("header .menu").is(":visible")) {
+                $("#hamburger").text("menu");
+                $("header .menu").slideToggle();
+            }
+        });
+
+        $("header .menu").on("click", function (e) {
+            e.stopPropagation();
+        });
+    }
 });

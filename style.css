@@ -616,6 +616,7 @@ footer .container {
         top: 25%;
         background-color: rgb(255, 255, 255);
         z-index: 10;
+        border-radius: 20px;
     }
 
     #srch_field {
