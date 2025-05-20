@@ -697,5 +697,48 @@ footer .container {
         font-size: 0.8em;
     }
 
+    .border-bottom {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    #footer-info {
+        display: block;
+    }
+
+    #footer-info div:first-child {
+        margin-bottom: 20px;
+    }
+
+    #footer-info .info h2 {
+        grid-area: title;
+    }
+    #footer-info .info span {
+        grid-area: arrow;
+        width: 100%;
+        text-align: end;
+    }
+    #footer-info .info ul {
+        grid-area: infos;
+        display: none;
+    }
+    #footer-info .info div {
+        grid-area: border-bottom;
+        margin-top: 10px;
+    }
+
+    #footer-info .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title arrow"
+            "infos infos"
+            "border-bottom border-bottom";
+    }
+
+    .arrow {
+        justify-self: end;
+    }
+
     /* End */
 }

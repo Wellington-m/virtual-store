@@ -36,5 +36,37 @@ $(() => {
         $("header .menu").on("click", function (e) {
             e.stopPropagation();
         });
+
+        function footerInformationToggle(element) {
+            const $ul = $(element).find("ul");
+
+            if ($($ul).is(":visible")) {
+                $($(element).find("span")).text("arrow_drop_down");
+                $($(element).find("ul")).slideToggle();
+            } else {
+                $($(element).find("span")).text("arrow_drop_up");
+                $($(element).find("ul")).slideToggle();
+            }
+        }
+
+        $("#information h2").on("click", function () {
+            const $parent = $(this).parent();
+            footerInformationToggle($parent);
+        });
+
+        $("#information span").on("click", function () {
+            const $parent = $(this).parent();
+            footerInformationToggle($parent);
+        });
+
+        $("#address h2").on("click", function () {
+            const $parent = $(this).parent();
+            footerInformationToggle($parent);
+        });
+
+        $("#address span").on("click", function () {
+            const $parent = $(this).parent();
+            footerInformationToggle($parent);
+        });
     }
 });
