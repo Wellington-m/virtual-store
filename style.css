@@ -573,6 +573,10 @@ footer .container {
     display: none;
 }
 
+#footer-info .info span {
+    display: none;
+}
+
 @media screen and (min-width: 641px) and (max-width: 1023px) {
     /* Header */
 
@@ -716,6 +720,7 @@ footer .container {
         grid-area: arrow;
         width: 100%;
         text-align: end;
+        display: block;
     }
     #footer-info .info ul {
         grid-area: infos;
