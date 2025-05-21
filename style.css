@@ -803,4 +803,12 @@ footer .container {
         grid-template-rows: auto;
         row-gap: 20px;
     }
+
+    .dropdown {
+        right: -34px;
+    }
+
+    .dropdown::after {
+        right: 48px;
+    }
 }
