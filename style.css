@@ -577,7 +577,7 @@ footer .container {
     display: none;
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
     /* Header */
 
     .container {
@@ -756,4 +756,51 @@ footer .container {
     }
 
     /* End */
+}
+
+@media screen and (max-width: 640px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 344px;
+    }
+
+    header .container {
+        grid-template-columns: 24px 198px 101px;
+        /* background-color: aqua; */
+    }
+
+    .new_products_list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #newsletter {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #footer-bottom .social-media {
+        grid-area: social;
+    }
+
+    #footer-bottom .payments-cards {
+        grid-area: cards;
+    }
+
+    #footer-bottom p {
+        grid-area: copyright;
+        text-align: end;
+    }
+
+    #footer-bottom {
+        grid-template-columns: 0.4fr auto;
+        grid-template-areas:
+            "social copyright"
+            "cards cards";
+        grid-template-rows: auto;
+        row-gap: 20px;
+    }
 }
