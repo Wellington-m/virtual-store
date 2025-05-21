@@ -48,24 +48,12 @@ $(() => {
             }
         }
 
-        $("#information h2").on("click", function () {
-            const $parent = $(this).parent();
-            footerInformationToggle($parent);
-        });
-
-        $("#information span").on("click", function () {
-            const $parent = $(this).parent();
-            footerInformationToggle($parent);
-        });
-
-        $("#address h2").on("click", function () {
-            const $parent = $(this).parent();
-            footerInformationToggle($parent);
-        });
-
-        $("#address span").on("click", function () {
-            const $parent = $(this).parent();
-            footerInformationToggle($parent);
-        });
+        $("#information h2, #information span, #address h2, #address span").on(
+            "click",
+            function () {
+                const $parent = $(this).parent();
+                footerInformationToggle($parent);
+            }
+        );
     }
 });
