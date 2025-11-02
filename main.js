@@ -33,7 +33,7 @@ $(() => {
         });
 
         $("header .menu").on("click", function (e) {
-            e.stopPropagation();
+            e.stopPropagation(); // impede o clique de propagar para o document
         });
 
         function footerInformationToggle(element) {
