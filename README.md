@@ -2,7 +2,7 @@
 
 Um projeto de layout de loja online, desenvolvido com HTML, CSS e JavaScript, com foco em **responsividade** e **acessibilidade**. Idealizado para funcionar perfeitamente em **desktop, tablet e celular**, utilizando boas práticas como **CSS Grid**, **Flexbox** e **Media Queries**.
 
-🔗 **Deploy online**: [Clique aqui para acessar a demo]([https://layout-loja.vercel.app](https://virtual-store-nine.vercel.app/))  
+🔗 **Deploy online**: [Clique aqui para acessar a demo](https://virtual-store-nine.vercel.app/)  
 📦 **Clonar e rodar**: basta abrir o arquivo `index.html`
 
 <details>
@@ -117,4 +117,5 @@ $("#information h2, #information span, #address h2, #address span").on(
 ---
 
 Feito com 💻 por **Wellington Machioni**
+
 
